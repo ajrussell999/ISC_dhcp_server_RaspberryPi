@@ -2,6 +2,7 @@
 Internet Services Consortium (ISC) dhcp server Version 4.3.1 on Raspbian Jessie, 2016.
 
 ##1    INTRODUCTION
+--------------------
 
 ###1.1    The Internet Systems Consortium (ISC) DHCP Server
 
@@ -12,6 +13,7 @@ The ISC dhcp server version 4.3.1 is a freely available, command line, dhcp serv
 The objective of the project was to install the isc-dhcp-server package from Raspberry Pi and test functionality of key features in a laboratory environment. The project was run in a two phases. Firstly to test basic functionality and afterwards to move to a more advanced configuration that gave failover backup in the case of the primary dhcp server failing. Also the configuration was written to allow the server to issue IP address leases from different address pools based on the hardware OUI (Organization Unique Identifier) given in dhcp discovery packet option 60. Using option 60 vendor-class-indentifier, all Raspberry Pi client boards would be issued addresses from the private IP address pool 10.0.91.0/24 while other machines in the lab namely Dell would receive IP addresses from the private IP address pool 10.0.0.0/24.
 
 ##2   CONFIGURATION
+-------------------
 
 ###2.1    Configuration Process
 
@@ -80,4 +82,5 @@ match if substring(option vendor-class-identifier, 26, 6) = "002001"
 ```
 The class RASPI assigns addresses in the 10.0.91/24 subnet range.  
 The class default assigns addresses from the default pool to all clients with an OUI other than 002001, in the address subnet range 10.0.0/24.  
+
 
