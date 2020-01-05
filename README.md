@@ -14,7 +14,9 @@ The objective of the project was to install the isc-dhcp-server package from Ras
 2.1    Configuration Process
 Configuring a Raspberry Pi as a dhcp server is a 4 stage process.
 First check for any new updates. This is an important step since the isc-dhcp-server has dependencies that must be at specific revision levels in order to function.  
-: sudo apt-get update  
+```sh
+: sudo apt-get update 
+```
 
 Once the updates has been performed the isc-dhcp-server application can be downloaded an installed.  
 : sudo apt-get install isc-dhcp-server  
