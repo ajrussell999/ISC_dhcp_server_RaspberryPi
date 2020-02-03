@@ -4,7 +4,7 @@
 
 1. Quick start
 **************
-Complete a few steps to set up your Power Profiler Kit (PPK). In the simplest configuration, the PPK is connected to an nRF5 Development Kit (DK, not included in the package).
+Complete a few steps to set up your Power Profiler Kit (PPK). In the simplest configuration, the PPK is connected to an nRF5 Development Kit (DK, not included in the package). 
 In this quick start, the PPK measures current on the nRF5 DK device, which also acts as a power supply and sends data to the Power Profiler application.
 
 1. Prepare the nRF5 DK for current measurements by cutting the nRF current measurement solder bridge. 
