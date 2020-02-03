@@ -1,6 +1,6 @@
+     
 
-
-.. header::     Kit content
+.. header::      Kit content 
 
 1. Quick start
 **************
