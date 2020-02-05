@@ -1,8 +1,7 @@
-     
-
-.. header:text-right:        Kit content
 
 
+.. header::   |                                             kit content
+                             
 
 1. Quick start
 **************
